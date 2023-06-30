@@ -36,8 +36,10 @@ This repo is created to demonstrate the use of POM(Page Object Model) and env va
 
 - Create an object of page class so that we can call the functions from that class
 
+```
 const loginPage = new LoginPage(page);
 await loginPage.doLogin(usernNameValue, passwordValue);
+```
 
 # env vars
 
