@@ -1,3 +1,5 @@
+[![Playwright Tests](https://github.com/kjnanda/playwright-pom/actions/workflows/playwright.yml/badge.svg)](https://github.com/kjnanda/playwright-pom/actions/workflows/playwright.yml)
+
 # playwright-pom
 This repo is created to demonstrate the use of POM(Page Object Model) and env vars
 
