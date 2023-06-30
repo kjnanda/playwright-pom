@@ -43,13 +43,30 @@ await loginPage.doLogin(usernNameValue, passwordValue);
 
 # env vars
 
-1. How to use env vars
-- Install the package for to dotenv
-```npm install dotenv --save```
+1. How to setup your project to use env vars
+- Install the package for to dotenv - `npm install dotenv --save`
 
 2. Create .env file at the root of your project and add it to your .gitignore file
+   
 3. Update playwright.config.js file with below code
-```import * as dotenv from 'dotenv';
+   
+```
+import * as dotenv from 'dotenv';
 dotenv.config({
   path:'.env'
 });
+```
+
+4. In .env file add your variables
+
+```
+USERNAME=demoUser
+PASSWORD=demoPassword
+```
+
+5. How to use it in testcase file
+
+```
+const usernNameValue = process.env.USERNAME;
+const passwordValue = process.env.PASSWORD;
+```
