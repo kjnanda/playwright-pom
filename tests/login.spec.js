@@ -3,12 +3,12 @@ import { LoginPage } from '../page/login';
 
 test('Testing Login using POM', async ({ page }) => {
 
-  const usernNameValue = process.env.USERNAME;
-  const passwordValue = process.env.PASSWORD;
+  const usernNameValue = process.env.username;
+  const passwordValue = process.env.password;
 
   const loginPage = new LoginPage(page);
 
-  await loginPage.navigateToURL(process.env.TESTURL);
+  await loginPage.navigateToURL(process.env.url);
 
   await loginPage.clickOnLoginLink();
 
